@@ -1,0 +1,113 @@
+var csaInfo = {
+  "farmName": "Ambrose Family Farm",
+  "organizations_url": "https://stonofarmmarket.com/AmbroseFamilyFarm.html",
+  "seasonsOffered":{
+    "Spring": "April through early July",
+    "Summer": "late July through September",
+    "Fall": "October through late December",
+    "Winter": "January through March",
+  }
+  "pricesPerBag"{
+    "tiny":"17.60/every other week",
+    "small": "17.60",
+    "meduim": "27.50",
+    "large": "38.50",
+    "xlarge": "49.50",
+    "add-ons": "available",
+    },
+    "pickUp": {
+      "Downtown Charleston": "Citadel-Near Citadel entrance, Tuesdays, 3pm to 6pm",
+      "James Island": "Medway Dr-Riverland Terrace, Tuesdays, 3pm to 6pm",
+      "Mt. Pleasant": "Long Point Rd-Creative Sparks Center, Wednesday, 3pm to 6pm",
+      "North Charleston":"Near water tower area, Thursdays, 3pm to 6pm",
+      "Summerville": "James Family Chiropractic-Trolly Rd, 3pm to 6pm",
+      "West Ashley": "Jewish Community Center-Wallenberg Rd, Tuesdays 3pm to 6pm",
+      },
+
+  "farmName":"Gruber Family CSA Farm",
+  "organization_url": "https://gruber-sca-farm.com"
+  "seasonsOffered"{
+    "Spring": "late April to mid-July",
+    "Fall Season":"late August to late November",
+  },
+  "pricesPerBag": {
+    "small": "22.92",
+    "medium": "32",
+    "large": "41.25",
+    },
+    "pickUp": {
+    "Edisto Island": "Edistonian",
+    "Goose Creek": "ESAC-St. James Ave.",
+    "Ladson": "Sonnys Citgo",
+    "Mt. Pleasant": "ESAC-Johnnie Dodds",
+    "N. Charleston": "ESAC-Dorchester",
+    "West Ashley": "ESAC-Ashley River Rd.",
+    "Summerville": "ESAC-Summerville",
+    "add-ons": "none offered",
+  },
+
+  "farmName": "Hudson Famliy Farms",
+  "organization_url": "http://hudsonfamilyfarmsc.com",
+  "seasonsOffered":{
+    "spring": "April through June",
+    "fall": "September through the beginning of November",
+  },
+  "pricesPerBag":{
+    "small": "17",
+    "medium": "23",
+    "large":  "32",
+    "xlarge": "41",
+  },
+  "pickUp":{
+    "Daniel Island": "Vail Travel Agency, 885-A Island Park Dr., Thursdays",
+    "Mt. Pleasant": "Triangle Char & Bar, 1440 Ben Sawyer Blvd., Tuesdays",
+    "N. Charleston": "Charelston Southern, private",
+    "Summerville": "Anytime Fitness, 205 Grandview Dr., SuiteA, Thursdays",
+    "West Ashley": "Triangle Char & Bar, 828 Savannah Hwy., Thursdays",
+  },
+
+  "farmName": "Legare Farms",
+  "organization_url": "http://legarefarms.com",
+  "seasonsOffered":{
+    "Spring": "15 weeks",
+    "Summer": "15 weeks",
+    "Fall": "6 weeks",
+    "Winter": "6 weeks",
+  },
+  "prices":{
+    "fullShare": "23.67",
+    "halfShare": "16.33",
+  },
+  "pickUp":{
+    "James Island":"The Pour House, Maybank Hwy., Tuesdays, 4:30pm to 6:00pm",
+    "Johns Island": "At the farm, 2620 Hanscombe Point Rd.,Wednesdays, 4:00pm to 6:00pm",
+    "Mt. Pleasant": "Earthly Artifacts, 411 Hibben Street, Thrusdays, 4:30pm to 6:00pm",
+    "N. Charleston": "Trident Tech Campus, Wednesdays, 3:30pm to 4:15pm",
+    "West Ashley": "Island Center Parking Lot, Wednesday, 4:45pm to 6:00pm",
+
+  },
+
+  "farmName": "Rosebank Farms",
+  "organization_url": "http://rosebankfarms.com",
+  "seasonsOffered":{
+    "Spring":"April 16-July 3",
+    "Summer": "July 9-September 26",
+    "Fall": "October 1-December 19",
+  },
+  "prices":{
+    "small": "21.36",
+    "medium": "31.36",
+    "large": "41.36",
+    "add-ons": "available",
+  },
+  "PickUp":{
+    "Downtown": "Ashley Hall, 172 Rutledge Ave., Thursdays, 11:00am to 7:00pm",
+    "I'On": "I'On Health, 10 Resolute Ln., Wednesdays, 11:30am to 5pm",
+    "James Island": "Precision Flooring, 447 Fleming St., Fridays, 9:30am to 4:00pm",
+    "Johns Island": "Sun Dog Cat Moon Vet, 2908 Maybank Hwy., Wednesdays, 9:30am to 6pm",
+    "Mt. Pleasant": "The Palms of Mt. Pleasant, 937 Bowman Rd., Wednesdays, after 11:00am",
+    "N. Charleston": "Limehouse Produce, 4791 Trade St., Thursdays, 6:00am to 3:00pm",
+    "Sullivans Island": "The Co-Op, 2019 Middle St., Wednesdays, 10:00am to 7:00pm",
+    "West Ashley": "All Is Well, 3417-B Shelby Ray Ct., Wednesdays, after 12:00pm",
+  }
+}

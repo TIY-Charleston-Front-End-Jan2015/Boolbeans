@@ -81,8 +81,8 @@ var csaInfo = {
     "winter": "6 weeks"
   },
   "pricesPerBag":{
-    "small": "16.33",
-    "medium": "23.67"
+    "small": 16.33,
+    "medium": 23.67
   },
   "pickUp":{
     "ji":"The Pour House, Maybank Hwy., Tuesdays, 4:30pm to 6:00pm",

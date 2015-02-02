@@ -11,73 +11,6 @@ var appPage =
     appPage.addSchedule();
     appPage.surveyFilter();
 
-
-valArr = []
-// LOCATION FUNCTION
-  $(".loc").click(function () {
-    var searchVal0 = $(this).attr('rel');
-    console.log(searchVal0);
-    valArr.push(searchVal0);
-  var pickUpLocation = function(farmName) {
-    if (csaInfo[farmName]["pickUp"].hasOwnProperty(searchVal0)) {
-      // console.log(csaInfo[farmName]["farmName"]);
-      // console.log(csaInfo[farmName]["pickUp"][searchVal0])
-      // Console log all farm info
-    }
-  }
-    pickUpLocation("Ambrose","Gruber","Hudson","Legare","Rosebank")
-  });
-
-// SIZE FUNCTION
-$(".count").click(function () {
-  var searchVal1 = $(this).attr('rel');
-  console.log(searchVal1);
-  valArr.push(searchVal1);
-  var sizeOfBag = function(farmName) {
-    if (csaInfo[farmName]["pricesPerBag"].hasOwnProperty(searchVal1)) {
-      // console.log(csaInfo[farmName]["farmName"]);
-      // console.log(csaInfo[farmName]["pricesPerBag"][searchVal1])
-    }
-  }
-  sizeOfBag("Ambrose","Gruber","Hudson","Legare","Rosebank")
-});
-
-// STORE SELECTIONS TO ARRAY
-// var total = function (farmName) {
-//   if (csaInfo[farmName].hasOwnProperty(searchVal0 && searchVal1)) {
-//     console.log(csaInfo[farmName]["farmName"]);
-//     console.log(csaInfo[farmName]["pricesPerBag"][searchVal1])
-//     console.log(csaInfo[farmName]["pickUp"][searchVal0])
-//     console.log(csaInfo[farmName]["organizations_url"])
-//   }
-// }
-console.log(valArr)
-
-// FIND FARMS
-$(".submitButton").click(function () {
-  var findFarms = function(farmName) {
-
-    if (csaInfo[farmName]["pickUp"].hasOwnProperty(valArr[0]) && csaInfo[farmName]["pricesPerBag"].hasOwnProperty(valArr[1])) {
-      console.log(csaInfo[farmName]["farmName"]);
-      console.log(csaInfo[farmName]["pricesPerBag"][valArr[1]]);
-      console.log(csaInfo[farmName]["pickUp"][valArr[0]]);
-      console.log(csaInfo[farmName]["organizations_url"]);
-    }
-  }
-    findFarms("Ambrose")
-    findFarms("Gruber")
-    findFarms("Hudson")
-    findFarms("Legare")
-    findFarms("Rosebank")
-});
-
-// function foo() {
-//   for (var i = 0, j = arguments.length; i < j; i++){
-//     document.write(arguments[i]+' ');
-//   }
-//   document.write('<br />');
-// }
-
 },
 
   initEvents: function () {
@@ -101,58 +34,87 @@ $(".submitButton").click(function () {
         }
 
       if (season==="winter") {
-
-        return seasonalInfo["winter"]["Y"];
+        var currentProducts = seasonalInfo["winter"]["N"];
       }
       else if (season==="spring") {
-        return seasonalInfo["spring"]["Y"];
-
+        var currentProducts = seasonalInfo["spring"]["Y"];
       }
       else if (season==="summer"){
-        return seasonalInfo["summer"]["Y"];
-
+        var currentProducts = seasonalInfo["summer"]["Y"];
       }
       else {
-        return seasonalInfo["fall"]["Y"];
+        var currentProducts = seasonalInfo["fall"]["Y"];
+      }
 
+
+      for (var i in currentProducts) {
+        console.log(currentProducts[i]);
+      }
+
+      var newProductList = {
+        // list: splitProducts
+        list: currentProducts[i]
       }
 
 
     var inSeasonCompiled = _.template(templates.inSeason);
-    console.log(inSeasonCompiled(seasonalInfo));
-    $(".inSeasonBoard").append(inSeasonCompiled(seasonalInfo));
+    console.log(inSeasonCompiled(newProductList));
+    $(".inSeasonBoard").append(inSeasonCompiled(newProductList));
 
   },
 
   surveyFilter: function () {
-// Location
-var pickUp = function (farmname) {
-    results = [];
-    var searchField = [farmname]["pickUp"];
-    var searchVal = $(this).attr("rel");
-    for (var i=0 ; i < csaInfo[farmname]["pickUp"].length ; i++)
-    {
-      if (csaInfo[farmname]["pickUp"][i][searchField] == searchVal) {
-        results.push(csaInfo[farmname]["pickUp"][i]);
+  valArr = []
+
+  // STORE LOCATION TO ARRAY
+  $(".loc").click(function () {
+    var searchVal0 = $(this).attr('rel');
+    console.log(searchVal0);
+    valArr.push(searchVal0);
+  });
+
+  // STORE SIZE TO ARRAY
+  $(".count").click(function () {
+    var searchVal1 = $(this).attr('rel');
+    console.log(searchVal1);
+    valArr.push(searchVal1);
+  });
+
+  // FIND FARMS
+  $(".submitButton").click(function () {
+    var findFarms = function(farmName) {
+
+      if (csaInfo[farmName]["pickUp"].hasOwnProperty(valArr[0]) && csaInfo[farmName]["pricesPerBag"].hasOwnProperty(valArr[1])) {
+        console.log(csaInfo[farmName]["farmName"]);
+        console.log(csaInfo[farmName]["pricesPerBag"][valArr[1]]);
+        console.log(csaInfo[farmName]["pickUp"][valArr[0]]);
+        console.log(csaInfo[farmName]["organizations_url"]);
+
+        var theFarmName =  (csaInfo[farmName]["farmName"]);
+        var thePrice = (csaInfo[farmName]["pricesPerBag"][valArr[1]]);
+        var theLocation = (csaInfo[farmName]["pickUp"][valArr[0]]);
+        var theUrl = (csaInfo[farmName]["organizations_url"]);
+
+        var newFarmList = {
+          farm: theFarmName,
+          price: thePrice,
+          pickup: theLocation,
+          url: theUrl
+        }
+        // TEMPLATES
+        var farmResultsCompiled = _.template(templates.farmResults);
+        console.log(farmResultsCompiled(newFarmList));
+        $(".farmResults").append(farmResultsCompiled(newFarmList));
       }
     }
-    console.log(results)
-  }
+    findFarms("Ambrose")
+    findFarms("Gruber")
+    findFarms("Hudson")
+    findFarms("Legare")
+    findFarms("Rosebank")
 
 
-// size
-var price = function () {
-    results = [];
-    var searchField = "pricesPerBag";
-    var searchVal = $(this).attr("name");
-    for (var i=0 ; i < csaInfo["pricesPerBag"][index].length ; i++)
-    {
-      if (csaInfo["pricesPerBag"][index][i][searchField] == searchVal) {
-        results.push(csaInfo["pricesPerBag"][index][i]);
-      }
-    }
-  }
-
+  });
 
   }
 }

@@ -1,6 +1,6 @@
 var seasonalInfo = {
     "winter": {
-      "Y": [],
+      "Y": ["Sorry, nothing is in season right now"],
       "N": [ "greenbeans",
         "polebeans",
         "beats",

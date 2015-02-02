@@ -1,23 +1,43 @@
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background: white; }
 
 section {
   font-family: "Helvetica", sans-serif; }
   section h1 {
-    color: lightblue; }
+    color: lightblue;
+    text-align: center; }
 
 .container {
   width: 80%;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: inline-block; }
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+  .container h1 {
+    font-size: 3em;
+    color: tomato; }
   .container .inSeasonBoard {
     width: 100%;
     display: inline-block; }
+    .container .inSeasonBoard h1 {
+      font-size: 1.5em;
+      color: darkolivegreen; }
     .container .inSeasonBoard h5 {
       display: inline-block; }
   .container .questionForm {
     display: inline-block; }
     .container .questionForm h1 {
-      color: lightblue; }
+      color: lightblue;
+      text-align: center; }
+    .container .questionForm h2 {
+      font-size: 2.25em; }
+    .container .questionForm .submitButton {
+      margin-bottom: 5%; }
+  .container .farmResults {
+    text-align: center; }
+    .container .farmResults h2 {
+      color: tomato; }
+    .container .farmResults h5.url {
+      padding-bottom: 5%;
+      border-bottom: darkolivegreen 2px solid; }

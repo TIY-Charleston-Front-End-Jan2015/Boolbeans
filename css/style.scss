@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background: white;
 }
 
 section {
@@ -8,19 +9,31 @@ section {
 
   h1 {
     color: lightblue;
+    text-align: center;
   }
 
 }
 
 .container {
   width: 80%;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+
+  h1 {
+    font-size: 3em;
+    color: tomato;
+  }
 
   .inSeasonBoard {
     width: 100%;
     display: inline-block;
+
+    h1 {
+      font-size: 1.5em;
+      color: darkolivegreen;
+    }
 
     h5 {
       display: inline-block;
@@ -33,6 +46,29 @@ section {
 
     h1 {
       color: lightblue;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.25em;
+    }
+
+    .submitButton {
+      margin-bottom: 5%;
+    }
+
+  }
+
+  .farmResults {
+    text-align: center;
+
+    h2 {
+      color: tomato;
+    }
+
+    h5.url {
+      padding-bottom: 5%;
+      border-bottom: darkolivegreen 2px solid;
     }
   }
 

@@ -1,0 +1,43 @@
+body{
+  background-color:#F0E68C;
+  p{
+    font-size:20px;
+  }
+  h3{
+    font-size:40px;
+    }
+  }
+
+.container{
+  width:98%;
+  .top-buffer{
+    margin-top:15px;
+}
+/*top picture*/
+  .jumbotron{
+    width:100%;
+    padding:0 auto;
+    margin:0 auto;
+    background-image:url("images/yummy.jpeg");
+
+  }
+  .title{
+    font-size:150px;
+    text-shadow:4px 4px black;
+    text-align:center;
+    color:white;
+  }
+
+  .bottom-buffer{
+    margin-bottom:30px;
+  }
+  img{
+    background-image:url("images/watermelonFace.jpeg");
+    width:500px;
+    height:450px;
+  }
+
+}
+.myButton{
+  width:220px;
+}

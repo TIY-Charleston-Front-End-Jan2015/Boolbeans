@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veggi-Table</title>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="bower_components/bootswatchCopy.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script id="productTmpl" type="html/template"></script>
+</head>
+<body>
+  <div class="container bottom-buffer">
+    <header>
+      <div class="jumbotron bottom-buffer">
+        <h1 class="title">Veggie-Table</h1>
+      </div>
+    </header>
+  <!--What's Veggi-Table-->
+    <div class="row-top bottom-buffer">
+      <div class="col-xs-4 bottom-buffer">
+        <h3 class="text-center">What is Veggi-Table?</h3>
+        <p class="text-left">Veggi-Table is a site created to help you learn about our local CSAs and make it easier for you to figure out which one would be right for you. CSAs offer a great way for you and your family to make sure you have fresh, locally grown vegitables available at home every week. In the Charleston and outlying Charleston area, agriculture is a big part of our history and our future. We are lucky enough to have a variety of farms with wonderful familys who take great care and pride in growing high quality produce for their neighbors, which includes you! However, sometimes trying to figure out how to get started and learning what would work best for you can be difficult. We're here to make it easy. Just click on the appropriate buttons below, submit, and, voila, the CSA or CSAs best for you will appear. So go ahead, answer the questions below, and see what you find. </p>
+      </div>
+    </div>
+
+<!--Picture-->
+      <div class="col-xs-4 bottom-buffer">
+        <a href=""><img src="images/watermelonFace.jpeg"></a>
+      </div>
+<!--What's a CSA?-->
+      <div class="col-xs-4 bottom-buffer">
+        <h3 class="text-center">What Is a CSA?</h3>
+        <p class="text-left">
+          CSA stands for Community Supported Agriculture. For over 25 years, CSA has become a popular way for consumers to buy local, seasonal food directly from a farmer.
+
+          Here are the basics: a farmer offers a certain number of "shares" to the public. Typically the share consists of a box of vegetables, but other farm products may be included. Interested consumers purchase a share (aka a "membership" or a "subscription") and in return receive a box (bag, basket) of seasonal produce each week throughout the farming season. This arrangement creates several rewards for the consumer including eating ultra-fresh food with all the flavor and vitamin benefits, becoming exposed to new vegetables and new ways of cooking, and the convenience of simply picking up a box or bag once a week.
+        </p>
+      </div>
+
+  <section class="container">
+    <div class="row localFarm">
+      <div class="col-xs-4 col-xs-offset-4 text-center">
+        <h1>Find a Local Farm</h1>
+      </div>
+    </div>
+    <section class="inSeasonBoard">
+    </section>
+    <section class="questionForm">
+      <div class="month">
+
+          <!--How many people-->
+
+    <div class="row bottom-buffer">
+      <div class="col-med-4 center-block">
+        <h2 class="text-center">How many people?</h2>
+      </div>
+    </div>
+    <div class="row bottom-buffer style="float: none; margin: 0 auto;">
+      <div class="col-xs-1  bottom-buffer">
+        <button class="btn btn-default count myButton" rel="tiny" name="tiny">Just me</button>
+      </div>
+      <div class="col-xs-2 col-xs-offset-1 bottom-buffer">
+        <button class="btn btn-default count myButton" rel="small" name="small">Me and one other person</button>
+      </div>
+      <div class="col-xs-2 bottom-buffer">
+        <button class="btn btn-default count myButton" rel="medium" name="medium">Me and three other people</button>
+      </div>
+      <div class="col-xs-2 bottom-buffer">
+        <button class="btn btn-default count myButton" rel="large" name="large">Me and a five other people</button>
+      </div>
+      <div class="col-xs-2  bottom-buffer">
+        <button class="btn btn-default count myButton" rel="xlarge" name="xlarge">Me and shitload other people</button>
+      </div>
+    </div>
+    </div>
+    <div class="row bottom-buffer">
+        <div class="col-xs-4 col-xs-offset-4">
+          <h2 class="text-center">Where are you?</h2>
+        </div>
+    </div>
+        <div class="row bottom-buffer">
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="di" name="di">Daniel Island</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton"  rel="downtown" name="downtown">Downtown</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="edisto" name="Edisto">Edisto</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="ion" name="ion">I'on</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="ji" name="ji">James Island</button>
+            </div>
+          </div>
+          <div class="row bottom-buffer">
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="johnsisland" name="johnsisland">John's Island</button>
+            </div>
+            <div class="col-xs-2 bottom buffer">
+              <button class="btn btn-default loc myButton" rel="mtp" name="mtp">Mt. Pleasant</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+              <button class="btn btn-default loc myButton" rel="nchs" name="nchs">N. Charleston</button>
+            </div>
+            <div class="col-xs-2">
+              <button class="btn btn-default loc myButton" rel="summerville" name="summerville">Summerville</button>
+            </div>
+            <div class="col-xs-2 bottom-buffer">
+                <button class="btn btn-default loc myButton" rel="wa" name="wa">West Ashley</button>
+            </div>
+            <div class="row bottom-buffer">
+              <div class="col-xs-2 col-xs-offset-5 text-center">
+                <h2>Submit</h2>
+              </div>
+            </div>
+            <div class="row bottom-buffer">
+              <div class="col-xs-2 col-xs-offset-5">
+                <button class="btn btn-default submitButton myButton" name="submit">Find my farms</button>
+              </div>
+            </div>
+          </div> <!--month-->
+        </div>  <!--.container-->
+     </section>
+     <section class="farmResults">
+     </section>
+   </section>
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="farm.json"></script>
+    <script src="seasonalInfo.json"></script>
+    <script src="templates.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

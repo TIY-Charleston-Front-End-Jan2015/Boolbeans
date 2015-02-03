@@ -1,4 +1,5 @@
 var csaInfo = {
+<<<<<<< HEAD
   "farmName": "Ambrose Family Farm",
   "organizations_url": "https://stonofarmmarket.com/AmbroseFamilyFarm.html",
   "seasonsOffered":{
@@ -109,5 +110,124 @@ var csaInfo = {
     "N. Charleston": "Limehouse Produce, 4791 Trade St., Thursdays, 6:00am to 3:00pm",
     "Sullivans Island": "The Co-Op, 2019 Middle St., Wednesdays, 10:00am to 7:00pm",
     "West Ashley": "All Is Well, 3417-B Shelby Ray Ct., Wednesdays, after 12:00pm",
+=======
+
+"Ambrose": {
+  "farmName": "Ambrose Family Farm",
+  "organizations_url": "https://stonofarmmarket.com/AmbroseFamilyFarm.html",
+  "seasonsOffered": {
+    "spring": "April through early July",
+    "summer": "late July through September",
+    "fall": "October through late December",
+    "winter": "January through March"
+    },
+  "pricesPerBag": {
+    "tiny":"17.60/every other week",
+    "small": 17.60,
+    "meduim": 27.50,
+    "large": 38.50,
+    "xlarge": 49.50
+    },
+  "pickUp": {
+    "downtown": "Citadel-Near Citadel entrance, Tuesdays, 3pm to 6pm",
+    "ji": "Medway Dr-Riverland Terrace, Tuesdays, 3pm to 6pm",
+    "mtp": "Long Point Rd-Creative Sparks Center, Wednesday, 3pm to 6pm",
+    "nchs": "Near water tower area, Thursdays, 3pm to 6pm",
+    "summerville": "James Family Chiropractic-Trolly Rd, 3pm to 6pm",
+    "wa": "Jewish Community Center-Wallenberg Rd, Tuesdays 3pm to 6pm"
+    }
+  },
+
+"Gruber": {
+  "farmName":"Gruber Family CSA Farm",
+  "organization_url": "https://gruber-sca-farm.com",
+  "seasonsOffered": {
+    "spring": "late April to mid-July",
+    "fall": "late August to late November"
+  },
+  "pricesPerBag": {
+    "small": 22.92,
+    "medium": 32,
+    "large": 41.25
+    },
+    "pickUp": {
+      "edisto": "Edistonian",
+      "goosecreek": "ESAC-St. James Ave.",
+      "ladson": "Sonnys Citgo",
+      "mtp": "ESAC-Johnnie Dodds",
+      "nchs": "ESAC-Dorchester",
+      "wa": "ESAC-Ashley River Rd.",
+      "summerville": "ESAC-Summerville"
+      }
+  },
+
+"Hudson": {
+  "farmName": "Hudson Famliy Farms",
+  "organization_url": "http://hudsonfamilyfarmsc.com",
+  "seasonsOffered": {
+    "spring": "April through June",
+    "fall": "September through the beginning of November"
+  },
+  "pricesPerBag": {
+    "small": 17,
+    "medium": 23,
+    "large":  32,
+    "xlarge": 41
+  },
+  "pickUp":{
+    "di": "Vail Travel Agency, 885-A Island Park Dr., Thursdays",
+    "mtp": "Triangle Char & Bar, 1440 Ben Sawyer Blvd., Tuesdays",
+    "nchs": "Charelston Southern, private",
+    "summerville": "Anytime Fitness, 205 Grandview Dr., SuiteA, Thursdays",
+    "wa": "Triangle Char & Bar, 828 Savannah Hwy., Thursdays"
+  }
+},
+
+"Legare": {
+  "farmName": "Legare Farms",
+  "organization_url": "http://legarefarms.com",
+  "seasonsOffered":{
+    "spring": "15 weeks",
+    "summer": "15 weeks",
+    "fall": "6 weeks",
+    "winter": "6 weeks"
+  },
+  "pricesPerBag":{
+    "small": 16.33,
+    "medium": 23.67
+  },
+  "pickUp":{
+    "ji":"The Pour House, Maybank Hwy., Tuesdays, 4:30pm to 6:00pm",
+    "johnsisland": "At the farm, 2620 Hanscombe Point Rd.,Wednesdays, 4:00pm to 6:00pm",
+    "mtp": "Earthly Artifacts, 411 Hibben Street, Thrusdays, 4:30pm to 6:00pm",
+    "nchs": "Trident Tech Campus, Wednesdays, 3:30pm to 4:15pm",
+    "wa": "Island Center Parking Lot, Wednesday, 4:45pm to 6:00pm"
+  }
+},
+
+"Rosebank": {
+  "farmName": "Rosebank Farms",
+  "organization_url": "http://rosebankfarms.com",
+  "seasonsOffered": {
+    "spring":"April 16-July 3",
+    "summer": "July 9-September 26",
+    "fall": "October 1-December 19"
+  },
+  "pricesPerBag":{
+    "small": 21.36,
+    "medium": 31.36,
+    "large": 41.36
+  },
+  "pickUp":{
+    "downtown": "Ashley Hall, 172 Rutledge Ave., Thursdays, 11:00am to 7:00pm",
+    "ion": "I'On Health, 10 Resolute Ln., Wednesdays, 11:30am to 5pm",
+    "ji": "Precision Flooring, 447 Fleming St., Fridays, 9:30am to 4:00pm",
+    "johnsisland": "Sun Dog Cat Moon Vet, 2908 Maybank Hwy., Wednesdays, 9:30am to 6pm",
+    "mtp": "The Palms of Mt. Pleasant, 937 Bowman Rd., Wednesdays, after 11:00am",
+    "nchs": "Limehouse Produce, 4791 Trade St., Thursdays, 6:00am to 3:00pm",
+    "sullivans": "The Co-Op, 2019 Middle St., Wednesdays, 10:00am to 7:00pm",
+    "wa": "All Is Well, 3417-B Shelby Ray Ct., Wednesdays, after 12:00pm"
+  }
+>>>>>>> bf67a1c23ce1bdb046dda39f3cbe51e71cee7c00
   }
 }

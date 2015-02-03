@@ -1,0 +1,20 @@
+{
+  "name": "Boolbeans",
+  "version": "0.0.0",
+  "homepage": "https://github.com/allstons/codinggreens",
+  "authors": [
+    "allstons <jagschwartz@aol.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "underscore": "~1.7.0"
+  }
+}
